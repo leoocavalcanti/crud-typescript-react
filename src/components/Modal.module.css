@@ -1,0 +1,59 @@
+.fade{
+
+    width: 100vw;
+    height: 140vh;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.modal{
+
+    transition: .6s;
+    border-radius: 6px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    z-index: 333;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.closeModal{
+
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.closeIcon{
+
+    color: #efefef;
+    cursor: pointer;
+    background-color: #282c34;
+    border-radius: 45%;
+
+}
+
+.closeIcon:hover{
+
+    opacity: 0.8;
+}
+
+.modal h2{
+
+    margin-bottom: 1em;
+}
+
+.modal form{
+
+    width: 90%
+}

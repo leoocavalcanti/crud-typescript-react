@@ -1,0 +1,36 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+body{
+
+    overflow-x: hidden;
+
+}
+.main .title{
+
+    margin-bottom: 40px;
+}
+
+.hide{
+
+    display: none !important;
+}
+
+.main{
+
+    min-height: 70vh;
+    text-align: center;
+    padding: 2em;
+    background-color: #efefef;
+
+}
+
+.main h2{
+
+    margin-bottom: 0.8em;
+
+}

@@ -1,0 +1,23 @@
+.footer{
+
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282c34;
+    color: #fff;
+    box-shadow: 1px 1px 4px #222;
+    text-shadow: 2px 2px 0px #222;
+}
+
+.footer p{
+
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #61dafb
+}
+
+.footer span{
+
+    color: #fff
+}
