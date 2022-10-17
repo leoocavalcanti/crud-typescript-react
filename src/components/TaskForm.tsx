@@ -2,6 +2,7 @@ import React, {useState, ChangeEvent, FormEvent, useEffect} from 'react'
 import styles from "./TaskForm.module.css"
 import { ITask } from "../interfaces/Task"
 import AddIcon from '@mui/icons-material/Add';
+import EditIcon from '@mui/icons-material/Edit';
 
 interface Props{
 
@@ -71,7 +72,7 @@ const TaskForm = ({btnText, taskList, setTaskList, task, handleUpdate}: Props) =
       <div className={styles.input_container}>
           <label>
             <span>Prioridade:</span>
-            <select required onChange={handleChange} value={priority} name="priority">
+            <select style={{cursor: "pointer"}}required onChange={handleChange} value={priority} name="priority">
               <option value="Baixa">Baixa</option>
               <option value="Média">Média</option>
               <option value="Alta">Alta</option>
@@ -79,7 +80,8 @@ const TaskForm = ({btnText, taskList, setTaskList, task, handleUpdate}: Props) =
           </label>
           
       </div>
-      <button id="button">{btnText} <AddIcon className={styles.addBtn}/></button>
+      {btnText === "Adicionar tarefa" && <button id="button">{btnText} <AddIcon className={styles.addBtn}/></button>}
+      {btnText === "Editar tarefa" && <button style={{backgroundColor: "#EEAD2D"}} id="button">{btnText} <EditIcon className={styles.addBtn}/></button>}
       
     </form>
   )

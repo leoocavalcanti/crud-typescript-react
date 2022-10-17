@@ -32,7 +32,11 @@ const TaskList = ({taskList, handleDelete, handleEdit}: Props) => {
         <div key={index} className={styles.task}>
           <div className={styles.details}>
             <h4>{task.title}</h4>
-            <p>Prioridade: <strong>{task.priority}</strong></p>
+            <p>Prioridade: {" "}
+              {task.priority === "Alta" && <strong style={{color: "#F44336"}}>{task.priority}</strong>}
+              {task.priority === "Média" && <strong style={{color: "#EEAD2D"}}>{task.priority}</strong>}
+              {task.priority === "Baixa" && <strong style={{color: "#4CAF50"}}>{task.priority}</strong>}
+            </p>
           </div>
           <div className={styles.actions}>
               <EditIcon onClick={() => handleEdit(task)}className={styles.editIcon}/>
